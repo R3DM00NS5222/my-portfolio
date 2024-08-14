@@ -1,0 +1,29 @@
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    /* This is a material design color */
+    --accent-color: #cf6679;
+    /* Red accent */
+    --accent-glow: 0 0 10px var(--accent-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    box-shadow: var(--accent-glow);
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* Add other components styles based on the theme */

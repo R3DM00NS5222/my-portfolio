@@ -1,0 +1,30 @@
+/* professionalTheme.css */
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #6200ea;
+    /* Material purple */
+    --accent-color: #bb86fc;
+    /* Soft purple accent */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Add other components styles based on the theme */

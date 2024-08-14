@@ -1,0 +1,99 @@
+/* Hero.css */
+
+/**
+ * Base styles for the Hero section.
+ * The Hero section spans the full viewport height, centered content with text aligned to the center.
+ */
+.hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/**
+ * Styles for the Hero content.
+ * The main heading is large, with a smaller tagline below it, followed by a call-to-action button.
+ */
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/**
+ * Styles for the call-to-action button.
+ * It includes padding, rounded corners, and a smooth transition effect on hover.
+ */
+.cta-button {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gaming Theme Specific Styles */
+
+/**
+ * Gaming theme for the Hero container.
+ * Dark background with light text color. Button has a red accent with a glowing effect.
+ */
+.hero-container.gaming {
+    background-color: var(--background-color);
+    /* Dark background */
+    color: var(--text-color);
+    /* Light text color */
+}
+
+/**
+ * Gaming theme for the call-to-action button.
+ * Red accent button with a glowing effect that intensifies on hover.
+ */
+.hero-container.gaming .cta-button {
+    background-color: var(--accent-color);
+    /* Red accent button */
+    color: var(--text-color);
+    /* Light text color */
+    box-shadow: var(--accent-glow);
+    /* Glowing effect */
+}
+
+.hero-container.gaming .cta-button:hover {
+    box-shadow: 0 0 20px var(--accent-color);
+    /* Intensify glow on hover */
+}
+
+/* Professional Theme Specific Styles */
+
+/**
+ * Professional theme for the Hero container.
+ * Light background with dark text color. Button has a soft purple accent.
+ */
+.hero-container.professional {
+    background-color: var(--background-color);
+    /* Light background */
+    color: var(--text-color);
+    /* Dark text color */
+}
+
+/**
+ * Professional theme for the call-to-action button.
+ * Soft purple accent button with a color change to darker purple on hover.
+ */
+.hero-container.professional .cta-button {
+    background-color: var(--accent-color);
+    /* Soft purple accent button */
+    color: var(--text-color);
+    /* Dark text color */
+}
+
+.hero-container.professional .cta-button:hover {
+    background-color: var(--primary-color);
+    /* Darker purple on hover */
+}

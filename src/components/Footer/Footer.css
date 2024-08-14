@@ -1,0 +1,82 @@
+/* Footer.css */
+
+/**
+ * Footer Styles
+ * The footer is positioned at the bottom of the page and is only visible at the end of scrolling.
+ */
+
+.footer {
+    background-color: #333;
+    /* Match the Navbar's background */
+    color: #fff;
+    /* White text color */
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    /* Ensures the footer is part of the normal document flow */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0 0 1rem 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #fff;
+    /* White text for links */
+    font-size: 1rem;
+}
+
+.footer-links li a:hover {
+    color: #f0f0f0;
+    /* Slightly lighter color on hover */
+}
+
+.footer-socials {
+    margin-top: 1rem;
+}
+
+.footer-socials a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    /* White text for links */
+}
+
+.footer-socials a:hover {
+    color: #f0f0f0;
+    /* Slightly lighter color on hover */
+}
+
+/* Ensure the footer stays at the bottom if the content is shorter than the viewport */
+html,
+body {
+    height: 100%;
+}
+
+.App {
+    min-height: 100vh;
+    /* Ensures the app takes up at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    /* Aligns the footer to the bottom */
+}
+
+main {
+    flex-grow: 1;
+    /* Ensures that main content takes up all available space */
+}

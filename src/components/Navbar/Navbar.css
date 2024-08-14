@@ -1,0 +1,61 @@
+/* Navbar.css */
+
+/**
+ * Base Navbar Styles
+ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
+}
+
+.navbar-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    /* White text for links */
+    font-size: 1rem;
+}
+
+.navbar-links li a:hover {
+    color: #f0f0f0;
+    /* Slightly lighter color on hover */
+}
+
+/**
+ * Theme Toggle Button Styles
+ * This styles the placeholder button that will eventually toggle the website theme.
+ */
+.theme-toggle {
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    /* Slightly lighter background than the navbar */
+    color: #fff;
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #777;
+    /* Lighten button on hover */
+}

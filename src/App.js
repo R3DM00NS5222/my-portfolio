@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
+/**
+ * App Component
+ * This is the main component of your React application. It renders the Navbar, a main section for content,
+ * and the Footer. The Footer is positioned at the bottom and is only visible after scrolling.
+ *
+ * @returns {JSX.Element} The main application component.
+ */
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar /> {/* Navbar with navigation links */}
+      <main>
+        {/* Additional content (like Hero, About, etc.) will go here */}
+        <p>Your main content goes here...</p>
+      </main>
+      <Footer /> {/* Footer with links and social media */}
     </div>
   );
 }
